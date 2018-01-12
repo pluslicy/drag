@@ -1,0 +1,59 @@
+body{
+	margin: 0;
+	padding:0;
+	font-size: 14px;
+	color: #333;
+}
+.container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 20px;
+	right: 20px;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+table th {
+	background-color: #f5f7fa;
+}
+table td,table th {
+	border: 1px solid #ebeef5;
+	text-align: center;
+	height: 2em;
+}
+table td:not(:first-child){
+	cursor: move;
+}
+.canDrog {
+	display: inline-block;
+}
+.canDrog li {
+  
+  padding: 7px 2em;
+  font-size: 12px;
+  border-radius: 4px;
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: move;
+  box-sizing: border-box;
+  margin: 0 5px;
+}
+.canDrog li:nth-child(1),.optimal {
+	background-color: #F56C6C;
+	color: #fff;
+}
+.canDrog li:nth-child(2),.good{
+	background-color: #E6A23C;
+	color: #fff;
+}
+.canDrog li:nth-child(3),.medium{
+	background-color: #409EFF;
+	color: #fff;
+}
+.canDrog li:nth-child(4),.badly{
+	background-color: #67C23A;
+	color: #fff;
+}
